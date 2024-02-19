@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-Medium;
+}
+@media screen and (max-width:768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .header .mobile-nav {
+        display: block;
+    }
+
+    .navigation {
+        text-align: right;
+    }
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(./assets/fonts/Gilroy-Light.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(./assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(./assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Semi-Bold;
+    src: url(./assets/fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(./assets/fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(./assets/fonts/Gilroy-ExtraBold.ttf);
+}
+
+:root {
+    --primary-color: #75BF7A;
+    --secondry-color: #000000;
+    --para-color: #9E9DA2;
+    --white-color:#FFF;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondry-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondry-color);
+}
+
+/* p {
+    color: var(--para-color);
+} */
+
+ .padding { 
+    padding: 20px 40px;
+} 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo-wrapper img
+ {
+    width: 100px;
+    height: 51px;
+    object-fit: contain;
+}
+
+.header .navigation {
+    width: 80%;
+    
+}
+
+.header .logo-wrapper {
+    width: 20%;
+   
+}
+
+.header .navigation ul {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.header .navigation ul li {
+    margin-right: 10px;
+}
+
+.header .navigation ul li a {
+    font-family: Gilroy-Medium;
+}
+
+
+
+.header .navigation ul .help-center a {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.header .mobile-nav {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* download */
+.content-download{
+    display: flex;
+justify-content: space-around;
+
+}
+.left-wrapper-download h4{
+color: var(--secondry-color);
+font-family: Gilroy-ExtraBold;
+font-size: 61px;
+font-weight: 52em;
+line-height: 66px;
+width: 100%;
+
+
+
+
+
+
+}
+.left-wrapper-download p{
+    color: var(--para-color);
+    
+font-size: 24px;
+font-weight: 500;
+line-height: 28px;
+
+
+margin-top: 20px;
+
+}
+.btn-wrapperdownload{
+    display: flex;
+  
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+.btn-wrapperdownload a{
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.right-wrapper-mapdownload img{
+
+width: 100%;
+height: 450px;
+
+
+}
+/* downloadend */
+ .mobilenumber{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobilenumber{
+background-color: var(--primary-color);
+width: 1280px;
+height: 120px;
+
+
+border-radius: 10px;
+margin-top: 50px;
+}
+.contentlink{
+    color: var(--white-color);
+    font-family: Gilroy;
+font-size: 20px;
+font-weight: 300;
+line-height: 28px;
+/* margin-left: 50px; */
+}
+.inputtext{
+    width: 300px;
+    height: 35px;
+    border: none;
+    outline: none;
+}
+.btn{
+    color:var(--white-color);
+    background-color: var(--secondry-color);
+   font-family: Gilroy-Bold;
+font-size: 20px;
+font-weight: 800;
+width: 260px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 4.39px;
+
+
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* benefits */
+.benefits .main-heading {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Gilroy;
+font-size: 46px;
+font-weight: 800;
+line-height: 50px;
+letter-spacing: 0em;
+}
+.speacial{
+color: var(--primary-color);    
+}
+.benefits .card{
+
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 60%;
+margin: 30px auto;
+padding: 20px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+border-radius: 10px;
+}
+.benefits .card2{
+    margin-left: 330px;
+    flex-direction: row-reverse;
+}
+.benefits .card1{
+    font-family: Gilroy;
+font-size: 34px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+
+.benefits .left-wrapper,
+.benefits .right-wrapper {
+    width: 50%;
+}
+.content span{
+    color: var(--primary-color);
+    font-family:Gilroy-Semi-Bold;
+    
+font-size: 88px;
+font-weight: 500;
+line-height: 119px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.content{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+font-size: 34px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+}
+.card-wrapper p{
+    color: var(--para-color);
+    font-family: Gilroy-Medium;
+font-size: 22px;
+font-weight: 500;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.benefits img{
+    width: 180px;
+ 
+
+}
+
+.right-wrapper p{
+    display: none;
+}
+
+
+/* footerstart */
+.footer{
+    display: flex;
+    /* margin: auto; */
+}
+.footer-logo-wrapper{
+    width: 25%;
+}
+.info{
+    width: 25%;
+    
+}
+.footer .info ul li a{
+    color: var(--para-color);
+    margin-bottom: 20px
+}
+.footer .info ul li{
+    margin-bottom: 10px;
+}
+   .info h4{
+    margin-bottom: 10px;
+   }
+
+.btn-wrapper{
+    display: flex;
+   
+    align-items: center;
+    gap: 10px;
+}
+.btn-wrapper a{
+    background-color: var(--secondry-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.copy-right p {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+@media screen and (max-width:992px) {
+    .benefits .card{
+        width: 80%;
+    }
+    .download .content-download{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+} 
+
+
+@media screen and (max-width:768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .header .mobile-nav {
+        display: block;
+    }
+
+    .navigation {
+        text-align: right;
+    }
+    .download .content-download{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .footer{
+        /* text-align: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .footer-logo-wrapper,
+    .footer .info{
+        width: 50%;
+    } 
+}
+    
+@media screen and (max-width:600px) {
+
+    .download .content-download{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+    }
+    
+    .benefits .card{
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+
+    }
+    .card .left-wrapper,
+    .card .right-wrapper {
+        width: 100%;
+
+    }
+    .left-wrapper p{
+        display: none;
+    }
+    .right-wrapper p{
+        display: block;
+    }
+    
+    
+     .benefits .card2{
+        margin-left: auto;
+    } 
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        /* margin-left: 32px; */
+        text-align: center;
+        
+    }
+    .footer-logo-wrapper,
+    .footer .info,
+    .footer .btn-wrapper {
+        width: 100%;
+        border: 1px solid;
+    }
+      .footer .btn-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    
+}
+    @media screen and (max-width:430px) {
+        .download .content-download{
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .benefits .card{
+            flex-direction: column;
+            gap: 20px;
+            padding: 30px;
+        }
+        .card .left-wrapper,
+        .card .right-wrapper {
+            width: 100%;
+    
+        }
+        .left-wrapper p{
+            display: none;
+        }
+        .right-wrapper p{
+            display: block;
+        }
+        
+        
+         .benefits .card2{
+            margin-left: auto;
+        } 
+        
+    }
+    }
+
+
+
+
+
